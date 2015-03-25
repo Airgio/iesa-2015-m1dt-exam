@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    color: #009999;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Help!</title>
+
+</head>
+<body>
+	
+<p><i>IESA 2015 - Master 1 - Direction Technique - Soutenance du mercredi 25 mars 2015.</i></p>	
+	
+<h1>Bonjour</h1>
+
+<p>Je m'appelle Guanai,</p>
+
+<p>Je me suis enfuie de ma planète suite à une invasion de mercenaires interstellaires.
+Ce message est une bouteille à la mer avec des instructions qui vous permettront de m'aider.</p>
+
+<p>Pour éviter qu'il ne tombe en de mauvaises mains, il est crypté.</p>
+
+<p>Afin de le déchiffrer, vous devez mettre au point la machine à décrypter. Pour cela vous trouverez ci-joint un test unitaire : une fois que vous aurez fait passer ce test, alors il vous suffira d'appliquer le moteur au message ci dessous afin de le décrypter.</p>
+
+<p>La version décryptée vous sera remise à 11h : vous devrez avoir commité le décrypteur avant cette heure pour qu'il vous apporte des points.</p>
+
+<p>Pour éviter que l'ennemi intercepte vos documents, vous devrez créer un projet Github <code>iesa-15-m1dt-exam</code> et commiter dedans vos travaux. Et pour ne pas qu'ils détruisent votre précieux travail, vous devrez commiter tout au long de la journée, à chaque fois que vous le pourrez, et en tout cas à chaque fin de tâche (d'exercice). De plus, je dois repartir sur ma planète à 18h00 : aussi, tout commit après cette heure ne pourra être pris en compte.
+Et attention à la qualité et au formatage de votre code...</p>
+
+<p>Je vous remercie pour votre précieuse aide !</p>
+
+<p>A très bientôt</p>
+
+<p>Guanai</p>
+
+<h1>Décrypteur</h1>
+
+<p>Le test unitaire est le fichier <code>enigma-tests.html</code> : c'est un test utilisant <code>QUnit</code>, et contient toutes les informations pour créer le décrypteur, à savoir la classe <code>Enigma</code> et ses méthodes qui permettront de faire passer le test.</p>
+
+<p>Créer un répertoire <code>enigma</code> et mettre dedans :</p>
+
+<ul>
+<li>le fichier de test unitaire <code>enigma-tests.html</code> fournit (et d'éventuels fichiers permettant de faire fonctionner le test unitaire en offline).</li>
+<li>le fichier <code>enigma.js</code> contenant votre développement</li>
+<li>le fichier <code>unit-test.md</code> contenant les réponses aux deux questions suivantes:
+
+<ul>
+<li>"Le test unitaire n'est pas du test, c'est..."</li>
+<li>"Le TDD n'est pas du test, c'est..."</li>
+</ul>
+</li>
+</ul>
+
+
+<h1>Message crypté</h1>
+
+<h2>wjuwmujfyp</h2>
+
+<p>zym'eovzvbeéwpgpvemsvenjwigsveàewjuwmuvpevseqpyrpjnnjfgyseypgvsféveyd vf,evfevsefooe:</p>
+
+<ul>
+<li>ujewuj''ve'ljqqvuuve<code>wjuwmujfyp</code></li>
+<li>qy''èovemsveqpyqpgéfée<code>pv'muf</code>,egsgfgjuvnvsfeàe0</li>
+<li>uv'ecmjfpvenéfiyov'eàeoézvuyqqvpe'ljqqvuuvsfe<code>joo</code>,e<code>ngsm'</code>,e<code>ogzgov</code>evfe<code>nmufgquh</code></li>
+<li>wijwmsveqpvsoemse'vmueqjpjnèfpv,esvepvfympsvepgvsevfeajgfe'yseyqépjfgyse'mpeuve<code>pv'muf</code>e(vk:e<code>joo</code>ej ymfve'ysemsgcmveqjpjnèfpveàe<code>pv'muf</code>)</li>
+<li>zym'eovzpvbewynngféejqpè'ewijcmveéfjqveomefoo</li>
+</ul>
+
+
+<h3>ugzpjduv'</h3>
+
+<p>ojs'emsepvqvpfygpve<code>yyq</code>:</p>
+
+<ul>
+<li>mseagwigvpe<code>wjuwmujfyp. '</code></li>
+<li>mseagwigvpe<code>wjuwmujfyp-fv'f'.ifnu</code>e(vfeolézvsfmvu'eagwigvp'eqympemseayswfgyssvnvsfeyaaugsv)</li>
+<li>mseagwigvpe<code>yyq.no</code>ewysfvsjsfeuvefvkfve'mgzjsfejzvweuv'epéqys'v'e:
+
+<ul>
+<li>mseyd vfewlv'f:</li>
+<li>ov'e...</li>
+<li>ov'e...</li>
+<li>ov'e...</li>
+<li>msve...</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>dysm'</h3>
+
+<ul>
+<li>ujswvpemsvevkwvqfgyse'geuveqjpjnvfpveslv'feqj'emsesyndpveyme'geyseje0eyme2ejprmnvsf'evfequm'</li>
+<li>jgov:
+
+<ul>
+<li>fymfvenéfiyoveqy''èovemseqjpjnèfpvegnqugwgfvesynnée<code>jprmnvsf'</code></li>
+<li>jzvwe<code>jprmnvsf'.uvsrfi</code>eysejeuvesyndpveoljprmnvsf'eojs'eujenéfiyov</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>'gfvetvd</h2>
+
+<p>vs'mgfv,ejagseovenljgovpeàeajgpvezvsgpenjeajnguuveojs'ezyfpve'h'fènve'yujgpve ljmpjg'edv'ygseolmse'gfvegsfvpsvfeqpé'vsfjsfeuv'eogaaépvsfv'equjsèfv'eovezyfpve'h'fènve'yujgpve:</p>
+
+<ul>
+<li>wve'gfveoygfeêfpve yug,ejzvwemsesynevfemseuyry</li>
+<li>mfgug'vpeuv'efvwisyuyrgv'eifnuevfew'',e'js'ejmwmseymfgueymeapjnvtypxevkfvpsve(wn',eftgffvpedyyf'fpjq...)</li>
+<li>msejzvwemsveiynveqjrveqiqeifnu,ecmgeqy''èovemseivjovp,emsesjzdjp,emsewysfvsfevfemseayyfvpe(ajgfe'ygfenvnv,e'js'eapjnvtypxevkfvpsv)</li>
+<li>uve'gfveoygfeayswfgyssvpe'mpenyse'njpfqiysverjujwfgcmvezgjenvogj-cmvphe(msvezvp'gyseqympeuvedmpvjm,evfemsvezvp'gyseqympeuv'enydguv',efvppv'fpv'eymerjujwfgcmv')</li>
+<li>fymfv'euv'equjsèfv'e'ysfejaagwiév'e'mpewvffveiynvqjrvejzvweqympewijwmsveuvesyn,eujefjguuv,eujeog'fjswvejme'yuvguevfeuv'e100eqpvngvp'ewjpjwfèpv'eoveujeov'wpgqfgysejzvwemsveqvfgfvegnjrv</li>
+<li>fymfv'ewv'egsaypnjfgys'e'ysfe'fywxév'eojs'emseagwigvpeknueyme 'ys,ewijprév'evfejaagwiév'eojs'eujeiynvqjrv</li>
+<li>msewijnqefvkfvevsedj'enveqvpnvfeolvsfpvpeuvesyneoveujequjsvfve:e'geuvesynewyppv'qysoedgvsejmesyneolmsvequjsèfvejuyp'e ljppgzveàeujeqjrveoéfjgueoveujequjsvfv,e'gsysemsenv''jrvenlgsogcmvecmvewvffvequjsvfveslvkg'fveqj'</li>
+<li>ujeqjrveovfjguejaagwivevsequm'euveov'wpgqfgysewynquvfv</li>
+<li>ojs'euv'eovmkeqjrv',emsvewjpfve'vpjejaagwiévejzvwemsveéqgsruveqvp'yssjug'éveqygsfjsfe'mpeuveugvmeovewys'mufjfgys</li>
+</ul>
+
+
+<h3>ugzpjduv'</h3>
+
+<p>ojs'emsepéqvpfygpve<code>ttt</code>:</p>
+
+<ul>
+<li>mseagwigvpe<code>gsovk.qiq</code></li>
+<li>mseagwigvpe<code>ovfjgu.qiq</code></li>
+<li>mseagwigvpe<code>ov'xfyq.w''</code></li>
+<li>mseagwigvpe<code>nydguv.w''</code></li>
+</ul>
+
+
+<h3>dysm'</h3>
+
+<p>yseqvmfejwwéovpeàeqjrveoéfjguevseajg'jsfemseopjrejsoeopyqeoveulgnjrveojs'emsvebysvewgduve:eayswfgyssjugféeifnu5</p>
+
+<h1>Message décrypté</h1>
+
+<h2>Calculator</h2>
+
+<p>Vous devez écrire une machine à calculer en programmation orientée objet, et en TDD :</p>
+
+<ul>
+<li>la classe s'appelle <code>Calculator</code></li>
+<li>possède une propriété <code>result</code>, initialement à 0</li>
+<li>les quatre méthodes à développer s'appellent <code>add</code>, <code>minus</code>, <code>divide</code> et <code>multiply</code></li>
+<li>chacune prend un seul paramètre, ne retourne rien et fait son opération sur le <code>result</code> (Ex: <code>add</code> ajoute son unique paramètre à <code>result</code>)</li>
+<li>vous devrez commiter après chaque étape du TDD</li>
+</ul>
+
+
+<h3>Livrables</h3>
+
+<p>Dans un repertoire <code>oop</code> :</p>
+
+<ul>
+<li>Un fichier <code>Calculator.js</code></li>
+<li>Un fichier <code>calculator-tests.html</code> (et d'éventuels fichiers pour un fonctionnement offline)</li>
+<li>Un fichier <code>oop.md</code> contenant le texte suivant avec les réponses :
+
+<ul>
+<li>Un Objet c'est:</li>
+<li>Des ...</li>
+<li>Des ...</li>
+<li>Des ...</li>
+<li>Une ...</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>Bonus</h3>
+
+<ul>
+<li>lancer une exception si le parametre n'est pas un nombre ou si on a 0 ou 2 arguments et plus</li>
+<li>Aide:
+
+<ul>
+<li>Toute méthode possède un paramètre implicite nommé <code>arguments</code>.</li>
+<li>Avec <code>arguments.length</code> on a le nombre d'arguments dans la méthode</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Site web</h2>
+
+<p>Ensuite, afin de m'aider à faire venir ma famille dans votre système solaire j'aurais besoin d'un site internet présentant les différentes planètes de votre système solaire :</p>
+
+<ul>
+<li>ce site doit être joli, avec un nom et un logo</li>
+<li>utiliser les technologies HTML et CSS, sans aucun outil ou framework externe (CMS, Twitter Bootstrap...)</li>
+<li>une homepage PHP HTML, qui possède un header, un navbar, un content et un footer (fait soit meme, sans framework externe)</li>
+<li>le site doit fonctionner sur mon smartphone galactique via media-query (une version pour le bureau, et une version pour les mobiles, terrestres ou galactiques)</li>
+<li>toutes les planètes sont affichées sur cette homepage avec pour chacune le nom, la taille, la distance au soleil et les 100 premiers caractères de la description avec une petite image.</li>
+<li>toutes ces informations sont stockées dans un fichier XML ou JSON, chargées et affichées dans la homepage</li>
+<li>un champ texte en bas me permet d'entrer le nom de la planete : si le nom correspond bien au nom d'une planète alors j'arrive à la page détail de la planete, sinon un message m'indique que cette planete n'existe pas.</li>
+<li>la page detail affiche en plus la description complete</li>
+<li>dans les deux pages, une carte sera affichée avec une épingle personnalisée pointant sur le lieu de consultation</li>
+</ul>
+
+
+<h3>Livrables</h3>
+
+<ul>
+<li>Un fichier <code>index.php</code></li>
+<li>Un fichier <code>detail.php</code></li>
+<li>Un fichier <code>desktop.css</code></li>
+<li>Un fichier <code>mobile.css</code></li>
+</ul>
+
+
+<h3>Bonus</h3>
+
+<p>On peut accéder à page détail en faisant un drag and drop de l'image dans une zone cible : fonctionnalité HTML5</p>
+
+</body>
+</html>

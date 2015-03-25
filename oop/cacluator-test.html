@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+ 
+  <link rel="stylesheet" href="qunit/qunit-1.17.1.css">
+  <script src="qunit/qunit-1.17.1.js"></script>
+  <script src="calculator.js"></script>
+ 
+  <script>
+  var calculAdd = new Calculator;
+  var calculAddParams = new Calculator;
+  var calculMinus = new Calculator;
+  var calculMultiply = new Calculator;
+  var calculDivide = new Calculator;
+
+  QUnit.test("Propriété addition",
+    function( assert ) {
+      calculAdd.add(62);
+      assert.equal(calculAdd.result,62, "0 + 62 = 62");
+    }
+  ),
+  test("Propriété addition avec negatif",
+    function( assert ) {
+      calculAdd.add(-24);
+      assert.equal(calculAdd.result,38, "62 + (-24) = 38");
+    }
+  );
+  QUnit.test("Propriété addition avec deux paramètres",
+    function( assert ) {
+      calculAddParams.add(-24,78);
+      assert.equal(calculAddParams.result,0, "Deux paramètres retournent 0");
+    }
+  );
+
+  QUnit.test("Propriété soustraction ",
+    function( assert ) {
+      calculMinus.minus(20);
+      assert.equal(calculMinus.result,-20, "0 - 20 = -20");
+    }
+  ),
+  test("Propriété soustraction avec nagatif",
+    function( assert ) {
+      calculMinus.minus(-17);
+      assert.equal(calculMinus.result,-3, "-20 - (-17) = -3");
+    }
+  );
+
+  QUnit.test("Propriété multiplication",
+    function( assert ) {
+      calculMultiply.multiply(5);
+      assert.equal(calculMultiply.result,0, "0 * 5 = 0");
+    }
+  );
+
+  QUnit.test("Propriété division",
+    function( assert ) {
+      calculDivide.divide(8);
+      assert.equal(calculDivide.result,0, "0 / 8 = 0");
+    }
+  );
+  </script>
+</head>
+<body>
+ 
+	<div id="qunit-fixture"></div>
+	<div id="qunit"></div>
+ 
+</body>
+</html>

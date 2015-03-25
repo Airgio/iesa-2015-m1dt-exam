@@ -1,30 +1,7 @@
-# isea-2015-m1dt
+# isea-2015-m1dt-exam
 
-http://daringfireball.net/projects/markdown/syntax
+## Le test unitaire n'est pas du test, c'est...
+Le test unitaire c'est de vérifier le bon fonctionnement d'un bout de code dans plusieurs scénario d'utilisation. Le but est de rendre un bout de code répondant à tout les cas de figure possible sans planter.
 
-## Test Drive Developement
-* Refactoring : modifier/optimiser son code seulement  après que son test soit vert
-
-## JavaScript
-* Google Map : Donner une dimenssion au container de la map.
-* Déclarer la map dans la méthode
-
-## Git
-* Git clone "lien git"
-* Git remote add origin "lien git"
-* Git status :  checker les fichiers modifiés
-* Git add . : ajouter l'ensemble des fichiers modifiés au projet
-* Git commit -m "message"
-* Git push master origin : premier push
-* Git push
-
-## PHP
-Les variables globales n'ont pas de portée dans les fonctions sans faire "global $var"
-
-Il existe 9 types en PHP
-* type scalaires
-** boolean, integer, float, string
-* Types composés
-** array, object
-* Types speciaux
-** resource, NULL
+## Le TDD n'est pas du test, c'est...
+Le but du TDD n'est pas de tester un bout de code mais de créer en amont les tests auquels un bout de code devra répondre. 
