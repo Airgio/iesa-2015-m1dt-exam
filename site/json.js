@@ -1,0 +1,44 @@
+{
+"Mercure" : {
+  "distance" : 58,
+  "diametre" : 4878,
+  "image": "mercure.png",
+  "description" : "Mercure est une toute petite planète rocheuse. Comme elle ne possède aucune atmosphère pour se protéger, Mercure enregistre des températures extrêmes (très élevées le jour et très froides la nuit).<br>Mercure est criblée de cratères, comme la Lune. Certains cratères sont aussi grands que la France.<br>Mercure est une des plus petites planètes du système solaire et pourtant elle est une des plus lourdes. En fait, Mercure a un noyau de fer très lourd, d’où son surnom de « planète de fer »."
+},
+"Vénus" : {
+  "distance" : 108,
+  "diametre" : 12100,
+  "image": "venus.png",
+  "description" : "Vénus ressemble beaucoup à la Terre : elle a quasiment la même taille et la même masse. Vénus est entourée d’une grosse épaisseur de nuages. A sa surface, on trouve des plaines, des montagnes, et même quelques volcans. Vénus est une véritable fournaise : 460 degrés.<br> Vénus est souvent appelée « l’étoile du berger », car elle est aussi brillante qu’une étoile. Longtemps, l’apparition et la disparition de Vénus sonnaient l’heure de rentrer et de sortir les troupeaux pour les bergers."
+},
+"Terre" : {
+  "distance" : 150,
+  "diametre" : 12756,
+  "image": "terre.png",
+  "description" : "La Terre est recouverte à plus de 70% d’eau : c’est la raison pour laquelle on la surnomme « la planète bleue ».<br>C’est grâce à l’eau et à l’atmosphère ( l’oxygène permet aux êtres vivants de respirer) que la vie est possible sur Terre. Si l’atmosphère n’existait pas il ferait très froid la nuit (-150 degrés) et très chaud le jour (100 degrés).<br> La Terre a des reliefs et des paysages très divers : déserts, forêts, banquise, montagnes..."
+},
+"Mars" : {
+  "distance" : 228,
+  "diametre" : 6795,
+  "image": "mars.png",
+  "description" : "Mars est une planète sèche et froide où la température peut descendre à -60 degrés et où soufflent de violentes tempêtes. Sa surface est couverte de volcans dont certains sont géants.<br>On appelle Mars la planète rouge à cause que de la poussière rougeâtre (rouille) que le vent soulève sur son sol désertique.<br>Il pourrait y avoir de l’eau sur Mars ,piégée dans le sol sous forme de glace.<br>Le nom de Mars désigne le dieu romain de la guerre, s’explique sans doute par cette couleur rouge sang, visible à l’oeil nu depuis la Terre."
+},
+"Jupiter" : {
+  "distance" : 778,
+  "diametre" : 142984,
+  "image": "jupiter.png",
+  "description" : "Jupiter est la plus grosse planète du système solaire. C’est une planète gazeuse. Le noyau de Jupiter est très chaud, alors que les températures à la surfacede la planète sont très froides (-120 degrés).La planète Jupiter a 2 anneaux fins.<br> L’un des traits caractéristiques de Jupiter est cette immense tache rouge à sa surface, grande comme 3 fois la terre. Il s’agit d’un cyclone géant qui tourbillonne depuis 3 000 ans.<br>Jupiter a plusieurs satellites : les 4 plus gros sont Ganymède, Calisto, Io et Europe."
+},
+"Saturne" : {
+  "distance" : 1427,
+  "diametre" : 10751,
+  "image": "saturne.png",
+  "description" : "Saturne est la deuxième planète la plus grosse du système solaire. Elle est environ 750 fois plus grosse que la Terre !<br>Saturne est en revanche une planète légère. Si on la plongeait dans une piscine, elle flotterait.Saturne est entourée de magnifiques anneaux qui dessinent des bandes de diverses couleurs. Cette couronne ressemble à un immense CD. Elle est composée de milliards de blocs de roche et de glace qui reflètent la lumière.<br>Saturne a plus d’une trentaine satellites, dont l’énorme Titan qui a la taille d’une planète."
+},
+"Uranus" : {
+  "distance" : 2875,
+  "diametre" : 51118,
+  "image": "uranus.png",
+  "description" : "Uranus est 4 fois plus grosse que la Terre. C’est une planète gazeuse composée de différents gaz dont le méthane qui lui donne sa couleur bleue.<br>Uranus est si éloignée de la Terre que les astronomes connaissent peu de choses à son sujet.Uranus semble tourner autour du Soleil en étant couchée sur le côté. Certaines surfaces de la planète restent donc tournées très longtemps vers le Soleil ou vers l’ombre.<br>Uranus possède 27 satellites connus, qui sont composés de glace et de roches."
+}
+}

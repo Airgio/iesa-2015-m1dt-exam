@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	list-style: none;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	background: url(img/bg.png) #000;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.bold {
+	font-weight: bold;
+}
+#wrap {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+}
+header {
+	text-align: center;
+}
+h1 {
+	display: inline-block;
+	margin: 30px;
+}
+nav  {
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	text-transform: uppercase;
+	width: 12%;
+	margin: 0 1%;
+	font-size: 13px;
+
+}
+nav a {
+	display: block;
+	width: 100%;
+	padding: 3px 0;
+	border-bottom: 2px solid #fff;
+}
+nav a:hover {
+	color: #000;
+	background: #fff;
+}
+section {
+	text-align: center;
+}
+.planeteCard {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 350px;
+	color: #4d4d4d;
+	width: 25%;
+	margin: 3%;
+}
+.planeteCard img {
+	width: 100%;
+	max-width: 300px;
+}
+.planeteCard h3 {
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom: 1px solid #fff;
+	padding: 10px;
+}
+.infoSup {
+	overflow: hidden;
+	position: relative;
+}
+.infoSup div {
+	color: #fff;
+	background: rgba(0,0,0,0.5);
+	border: 3px solid #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	padding-top: 25%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	opacity: 0;
+	display: none;
+}
+.infoSup:hover div{
+	display: block;
+	opacity: 1;
+}
+.infoSup p {
+	margin: 2% 0;
+}
+.desc {
+	color: #fff;
+	text-align: left;
+	padding: 3%;
+}
+
+#page img {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 20px 5% 20px 0;
+}
+#page #description {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	width: 60%;
+}
+#page h2 {
+	font-size: 25px;
+	font-weight: bold;
+
+}
+#page p {
+	font-size: 14px;
+	font-weight: normal;
+}
+#infos {
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	padding: 20px 0;
+	margin: 20px 0;
+}
